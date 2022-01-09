@@ -6,26 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ouahabi Mohammed Lamine ,Software engineer</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header class="header">
-    <nav></nav>
+    <div class="navbar">
+      <div class="logo"><a href="#home">LOGO</a></div>
+      <input type="checkbox" id="navbar-toggle">
+      <label for="navbar-toggle"><i></i></label>
+      <nav class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contactme">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+    </nav>
     <div class="heroMsg">
       <h1>ouahabi mohammed lamine</h1>
       <p>software engineer & data manager</p>
       <a href="#contactme">Contact Me</a>
     </div>
   </header>
-  <section class="about">
+  <section class="about" id="about">
     <H2>About me</H2>
     <p>welcome to my website,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
       aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
       fugiat nulla pariatur. Excepteur sint occaecat </p>
   </section>
-  <section>
+  <section id="services">
     <h2>Services</h2>
     <div class="services">
       <div class="service">
@@ -45,37 +64,52 @@
       </div>
     </div>
   </section>
-  <section class="Portfolio">
+  <section class="Portfolio" id="portfolio">
     <h2>My Portfolio</h2>
-    <div class="project">
-      <div class="image"></div>
-      <div class="desc">
-        <h3 class="title">al3akkar website</h3>
-        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua."</p>
+    <div class="projects">
+      <div class="project">
+        <img src="./images/service-coding.jpg" alt="">
+        <div class="desc">
+          <h3 class="title">al3akkar website</h3>
+          <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua."</p>
+        </div>
       </div>
-    </div>
-    <div class="project">
-      <div class="image"></div>
-      <div class="desc">
-        <h3 class="title">Soukrahmah website</h3>
-        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua."</p>
+      <div class="project">
+        <img src="./images/service-coding.jpg" alt="">
+        <div class="desc">
+          <h3 class="title">Soukrahmah website</h3>
+          <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua."</p>
+        </div>
       </div>
-    </div>
-    <div class="project">
-      <div class="image"></div>
-      <div class="desc">
-        <h3 class="title">top coders books</h3>
-        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua."</p>
+      <div class="project">
+        <img src="./images/service-coding.jpg" alt="">
+        <div class="desc">
+          <h3 class="title">top coders books</h3>
+          <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua."</p>
+        </div>
       </div>
     </div>
   </section>
   <section id="contactme">
     <h2>Contact Me</h2>
+    <form class="section-form" action="action_page.php">
+      <label for="full_name">Full Name</label>
+      <input type="text" id="full_name" name="full_name" placeholder="Your name ..">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email ..">
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
   </section>
-  <footer class="footer">mywebsite.com</footer>
+  <footer>
+    <p>mywebsite.com</p>
+  </footer>
+
+
 </body>
 
 </html>
